@@ -8,13 +8,15 @@ class MinMaxQueue:
 
     def pop_min(self):
         #perform on the min
-    
-        return
+        x = self.sorted_q[0]
+        del self.sorted_q[0]
+        return x
 
     def pop_max(self):
         #perform on the max
-
-        return
+        x = self.sorted_q[-1]
+        del self.sorted_q[-1]
+        return x
 
 def main():
     #create the lists of integers and signs, respectively
